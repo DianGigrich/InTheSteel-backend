@@ -1,5 +1,5 @@
-const Question = require('./Question');
+const Aisle = require('./Aisle');
 const User = require('./User');
-const Puzzle = require('./Puzzle');
+const Item = require('./Item');
 
-module.exports = { Question, User ,Puzzle};
+module.exports = { Aisle, User ,Item};

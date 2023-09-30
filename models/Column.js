@@ -1,33 +1,30 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Puzzle extends Model {}
+// create our column model
+class Column extends Model {}
 
-Puzzle.init(
-{
+// create fields/columns for model
+Column.init(
+  {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    name: {
+    column: {
       type: DataTypes.STRING,
-      allowNull: false
-    },
-    description: {
-        type: DataTypes.STRING,
-        allowNull: false
-      }
+      allowNull: true
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'puzzle'
+    modelName: 'column'
   }
 );
 
-
-module.exports = Puzzle;
+module.exports = Column;
