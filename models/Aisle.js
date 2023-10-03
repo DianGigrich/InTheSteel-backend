@@ -25,4 +25,4 @@ Aisle.init(
 );
 
 
-module.exports = Puzzle;
+module.exports = Aisle;
