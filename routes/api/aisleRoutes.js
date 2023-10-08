@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Puzzle } = require('../../models');
+const { Aisle } = require('../../models');
 
-// GET all puzzle
+// GET all aisles
 router.get('/', async (req, res) => {
   try {
-    const puzzleData = await Puzzle.findAll();
-    res.status(200).json(puzzleData);
+    const aisleData = await Aisle.findAll();
+    res.status(200).json(aisleData);
   } catch (err) {
     res.status(500).json(err);
   }

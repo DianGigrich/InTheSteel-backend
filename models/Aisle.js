@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Aisle extends Model {}
+class Aisle extends Model { }
 
 Aisle.init(
-{
+  {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -14,6 +14,10 @@ Aisle.init(
     number: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    column: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {
