@@ -15,7 +15,7 @@ Item.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        art: {
+        ART: {
             type: DataTypes.STRING
         },
         description: {
