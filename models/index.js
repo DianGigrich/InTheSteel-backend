@@ -1,7 +1,7 @@
 const Aisle = require('./Aisle');
 const User = require('./User');
 const Item = require('./Item');
-const MyFence = require('./Fence');
+const Fence = require('./Fence');
 
 
 Aisle.hasMany(Item);
